@@ -27,7 +27,7 @@
     },
     {
       "group": "Customizing",
-      "pages": ["customizing/tags", "customizing/position"]
+      "pages": ["customizing/tags", "customizing/position", "customizing/block", "customizing/style"]
     }
   ],
   "footerSocials": {
