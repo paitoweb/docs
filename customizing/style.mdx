@@ -1,10 +1,9 @@
 ---
 title: 'Style'
-description: 'Use design tokens for styling'
 icon: 'code'
 ---
 
-Insetir texto descrevendo como funciona.
+You can define the colors and radius to match your branding. Simply change the design tokens to match your site's design language.
 ```html index.html
 <script>
     window.pactto = window.pactto || {};
@@ -19,17 +18,66 @@ Insetir texto descrevendo como funciona.
         textInputPrimaryBackgroundColor: '#E9E2CB',
         textInputPrimaryBorderColor: 'transparent',
         buttonPrimaryColor: '#232225',
-        buttonPrimaryBorderRadius: '0px',
+        buttonPrimaryBorderRadius: '0',
         buttonPrimaryBackgroundColor: '#D5B666',
-        buttonCancelBorderRadius: '0px',
+        buttonCancelBorderRadius: '0',
         buttonCancelBackgroundColor: '#B8B8B8',
     };
 </script>
 ```
 
-Inserir texto explicando a imagen.
+Below you can see what each design token represents:
 
 <img
     style={{ borderRadius: '0.5rem' }}
     src="/images/design-tokens.png"
 />
+
+All design tokens:
+```html index.html
+<script>
+    window.pactto = window.pactto || {};
+    window.pactto.coach = 'username';
+    window.pactto.company = 'Coach Name';
+    // All designTokens attribute:
+    window.pactto.designTokens = {
+        primary: '#1dbaa5',
+        primaryTextColor: '#ffffff',
+        primaryTextFontFamily: 'Roboto, "Helvetica Neue", sans-serif',
+        primaryTextFontSize: '1rem',
+        primaryBackgroundColor: '#232225',
+        h2FontFamily: '"museo-slab", serif',
+        h2FontSize: '2.2rem',
+        h2LineHeight: '2.8rem',
+        h3FontFamily: '"museo-slab", serif',
+        h3FontSize: '1.6rem',
+        h3LineHeight: '2.2ch',
+        textInputPrimaryColor: '#FFFFFF',
+        textInputPrimaryFontFamily: 'Roboto, "Helvetica Neue", sans-serif',
+        textInputPrimaryFontSize: '0.875rem',
+        textInputPrimaryLineHeight: '1.125rem',
+        textInputPrimaryBackgroundColor: '#2c2b2e',
+        textInputPrimaryBorderColor: '#2c2b2e',
+        textInputPrimaryBorderWidth: '1px',
+        textInputPrimaryBorderRadius: '0',
+        buttonPrimaryColor: '#232225',
+        buttonPrimaryBorderColor: 'transparent',
+        buttonPrimaryBorderRadius: '3.75rem',
+        buttonPrimaryBorderWidth: '0',
+        buttonPrimaryBackgroundColor: '#1dbaa5',
+        buttonPrimaryFontSize: '1rem',
+        buttonPrimaryLineHeight: '1rem',
+        buttonPrimaryPaddingTop: '1.9ch',
+        buttonPrimaryPaddingBottom: '1.8ch',
+        buttonCancelColor: '#232225',
+        buttonCancelBorderColor: 'transparent',
+        buttonCancelBorderRadius: '3.75rem',
+        buttonCancelBorderWidth: '0',
+        buttonCancelBackgroundColor: '#9b9b9b',
+        buttonCancelFontSize: '1rem',
+        buttonCancelLineHeight: '1rem',
+        buttonCancelPaddingTop: '1.9ch',
+        buttonCancelPaddingBottom: '1.8ch',
+    };
+</script>
+```
