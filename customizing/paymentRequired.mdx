@@ -1,0 +1,34 @@
+---
+title: 'Payment Required'
+icon: 'code'
+---
+
+When you set the 'paymentRequired attribute to false, after the video is uploaded, a payment button is not displayed. The default value for the 'paymentRequired' attribute is true, so by not adding the attribute, users will always be presented with the payment button after the upload.
+```html index.html
+<script>
+    window.pactto = window.pactto || {};
+    window.pactto.coach = 'username';
+    window.pactto.company = 'Coach Name';
+    // Add paymentRequired attribute:
+    window.pactto.paymentRequired = false;
+</script>
+```
+
+Below you can see with payment button:
+
+<Frame caption="paymentRequired = true (default)">
+    <img
+        style={{ borderRadius: '0.5rem' }}
+        src="/images/payment-required-true.png"
+        alt="paymentRequired = true (default)" title="paymentRequired = true (default)"
+    />
+</Frame>
+
+Below you can see without payment button:
+
+<Frame caption="paymentRequired = false">
+    <img
+        style={{ borderRadius: '0.5rem' }}
+        src="/images/payment-required-false.png"
+    />
+</Frame>
